@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SunSeekers — Press & Media Kit</title>
+  <meta name="description" content="SunSeekers is an iOS social app built for real-world naturist connection. No ads, no algorithms, just people meeting IRL. Press kit and first-look details." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --sun: #E8A44A;
+      --sun-light: #F5C97A;
+      --deep: #1A2535;
+      --card: #ffffff;
+      --muted: #6B7280;
+      --border: #E5E7EB;
+      --text: #111827;
+      --radius: 16px;
+      --max: 780px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+      background: #F9F7F4;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      background: linear-gradient(160deg, #1A2535 0%, #2D3F5A 60%, #3D5A6E 100%);
+      color: #fff;
+      padding: 72px 24px 80px;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(232,164,74,.18);
+      border: 1px solid rgba(232,164,74,.35);
+      color: var(--sun-light);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 100px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 58px);
+      font-weight: 700;
+      letter-spacing: -.02em;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 span { color: var(--sun-light); }
+
+    .hero p {
+      font-size: 18px;
+      color: rgba(255,255,255,.75);
+      max-width: 520px;
+      margin: 0 auto 36px;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 13px 24px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: opacity .15s, transform .1s;
+    }
+    .btn:hover { opacity: .88; transform: translateY(-1px); }
+
+    .btn-primary { background: var(--sun); color: #1A1A1A; }
+    .btn-secondary { background: rgba(255,255,255,.12); color: #fff; border: 1px solid rgba(255,255,255,.22); }
+
+    /* ── Shared layout ── */
+    .section { padding: 64px 24px; }
+    .inner { max-width: var(--max); margin: 0 auto; }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--sun);
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: clamp(24px, 4vw, 34px);
+      font-weight: 700;
+      letter-spacing: -.02em;
+      margin-bottom: 12px;
+    }
+
+    .lead {
+      font-size: 17px;
+      color: var(--muted);
+      max-width: 580px;
+      margin-bottom: 40px;
+    }
+
+    /* ── One-liner card ── */
+    .oneliner {
+      background: var(--deep);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 32px 36px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.5;
+      position: relative;
+    }
+    .oneliner::before {
+      content: '"';
+      position: absolute;
+      top: 12px; left: 24px;
+      font-size: 72px;
+      line-height: 1;
+      color: var(--sun);
+      opacity: .4;
+    }
+    .oneliner p { padding-left: 12px; }
+
+    /* ── Stats ── */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    .stat-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 20px;
+      text-align: center;
+    }
+
+    .stat-card .num {
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--sun);
+      letter-spacing: -.02em;
+      line-height: 1;
+    }
+
+    .stat-card .label {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    /* ── Feature list ── */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .feature-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 22px;
+    }
+
+    .feature-icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .feature-card h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .feature-card p {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    /* ── Divider ── */
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 0;
+    }
+
+    /* ── Alt bg section ── */
+    .section-alt { background: #fff; }
+
+    /* ── Principles ── */
+    .principles { display: flex; flex-direction: column; gap: 16px; }
+
+    .principle {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 20px 22px;
+      background: #F9F7F4;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .principle-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+
+    .principle h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+    .principle p  { font-size: 14px; color: var(--muted); }
+
+    /* ── Developer ── */
+    .dev-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .dev-avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--sun) 0%, #C47C28 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      flex-shrink: 0;
+    }
+
+    .dev-info h3 { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+    .dev-info .handle { color: var(--sun); font-size: 14px; font-weight: 600; margin-bottom: 10px; }
+    .dev-info p  { font-size: 15px; color: var(--muted); max-width: 480px; }
+
+    /* ── Contact ── */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .contact-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 22px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color .15s, transform .1s;
+      display: block;
+    }
+    .contact-card:hover { border-color: var(--sun); transform: translateY(-2px); }
+
+    .contact-card .icon { font-size: 26px; margin-bottom: 10px; }
+    .contact-card .type { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+    .contact-card .value { font-size: 15px; font-weight: 600; color: var(--sun); }
+
+    /* ── Boilerplate ── */
+    .boilerplate {
+      background: var(--deep);
+      color: rgba(255,255,255,.8);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .boilerplate strong { color: #fff; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    footer a { color: var(--sun); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<!-- ── Hero ── -->
+<section class="hero">
+  <div class="hero-badge">Press &amp; Media Kit · 2026</div>
+  <h1>Meet <span>SunSeekers</span></h1>
+  <p>The iOS social app built for real-world naturist connection — no ads, no algorithms, just people meeting IRL.</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="mailto:press@sunseeker.app">📬 Contact for Review Access</a>
+    <a class="btn btn-secondary" href="https://apps.apple.com/app/sunseekers" target="_blank">📱 View on App Store</a>
+  </div>
+</section>
+
+<!-- ── One-liner ── -->
+<section class="section">
+  <div class="inner">
+    <div class="oneliner">
+      <p>SunSeekers is a mobile-first social network for the naturist community — connecting people around shared values of body positivity, privacy, and real-life meetups, built independently with no outside investment.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ── Quick facts ── -->
+<section class="section section-alt">
+  <div class="inner">
+    <div class="section-label">Quick Facts</div>
+    <h2>By the numbers</h2>
+    <p class="lead">A snapshot of SunSeekers as of launch.</p>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="num">iOS</div>
+        <div class="label">Platform — iPhone &amp; iPad</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">Free</div>
+        <div class="label">Free to join, optional Premium</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">0</div>
+        <div class="label">Ads or data selling — ever</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">1</div>
+        <div class="label">Indie developer. Solo-built.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ── Key Features ── -->
+<section class="section">
+  <div class="inner">
+    <div class="section-label">Features</div>
+    <h2>What reviewers should know</h2>
+    <p class="lead">Designed for discovery, safety, and genuine connection — not endless scrolling.</p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🌅</div>
+        <h3>Social Feed</h3>
+        <p>A chronological, curated feed from people you follow. No engagement-bait algorithm.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💬</div>
+        <h3>Group &amp; Direct Chat</h3>
+        <p>Private DMs and group chats for organizing real-life meetups and events.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔎</div>
+        <h3>Discover</h3>
+        <p>Browse public profiles and find local members to connect with in your area.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📖</div>
+        <h3>Stories</h3>
+        <p>Ephemeral photo &amp; video stories — share your day, disappear in 24 hours.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🛡️</div>
+        <h3>Safety Controls</h3>
+        <p>Auto-blur sensitive content, block, report, and moderation tools built in from day one.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <h3>21 Themes</h3>
+        <p>Full light/dark support with 21 curated color themes — from Sage to Mediterranean.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ── Principles ── -->
+<section class="section section-alt">
+  <div class="inner">
+    <div class="section-label">Values</div>
+    <h2>What we stand for</h2>
+    <p class="lead">These aren't marketing bullets — they're the decisions we make every day.</p>
+
+    <div class="principles">
+      <div class="principle">
+        <div class="principle-icon">🌿</div>
+        <div>
+          <h3>Body positivity</h3>
+          <p>A community that celebrates all bodies without shame or judgment. Moderation enforces this actively.</p>
+        </div>
+      </div>
+      <div class="principle">
+        <div class="principle-icon">🔒</div>
+        <div>
+          <h3>Privacy first</h3>
+          <p>No advertising. No third-party data sales. Sensitive content is blurred by default until users opt in.</p>
+        </div>
+      </div>
+      <div class="principle">
+        <div class="principle-icon">🤝</div>
+        <div>
+          <h3>Community driven</h3>
+          <p>Feature requests are public and voted on by users via WishKit. The community shapes the roadmap.</p>
+        </div>
+      </div>
+      <div class="principle">
+        <div class="principle-icon">✋</div>
+        <div>
+          <h3>Respect for all</h3>
+          <p>Community guidelines are strictly enforced. Harassment, exploitation, and disrespect have zero tolerance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ── Developer ── -->
+<section class="section">
+  <div class="inner">
+    <div class="section-label">The Developer</div>
+    <h2>Who built this</h2>
+    <p class="lead">SunSeekers is a solo indie project — one developer, one vision.</p>
+
+    <div class="dev-card">
+      <div class="dev-avatar">☀️</div>
+      <div class="dev-info">
+        <h3>Nicolas Rios</h3>
+        <div class="handle">@nakednerd33</div>
+        <p>Indie iOS developer based in California. SunSeekers is built and maintained solo — no team, no VC funding, no outside investors. Also the creator of Naturist Connect on the App Store.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ── Boilerplate ── -->
+<section class="section section-alt">
+  <div class="inner">
+    <div class="section-label">Boilerplate</div>
+    <h2>For your article</h2>
+    <p class="lead">Copy-ready description for publications.</p>
+
+    <div class="boilerplate">
+      <strong>SunSeekers</strong> is a free iOS social app for the naturist community, designed to help people connect in real life rather than scroll endlessly online. Built by independent developer Nicolas Rios in California, the app features a social feed, group and direct messaging, stories, and a discovery tool — all with no advertising, no data selling, and strong privacy controls built in from the start. SunSeekers is available free on the App Store with an optional Premium subscription.
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ── Contact ── -->
+<section class="section">
+  <div class="inner">
+    <div class="section-label">Get in Touch</div>
+    <h2>Press contact</h2>
+    <p class="lead">Review access, screenshots, and interview requests — reach out directly.</p>
+
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:press@sunseeker.app">
+        <div class="icon">📬</div>
+        <div class="type">Press Inquiries</div>
+        <div class="value">press@sunseeker.app</div>
+      </a>
+      <a class="contact-card" href="mailto:support@sunseeker.app">
+        <div class="icon">🛠️</div>
+        <div class="type">General Support</div>
+        <div class="value">support@sunseeker.app</div>
+      </a>
+      <a class="contact-card" href="https://apps.apple.com/app/sunseekers" target="_blank">
+        <div class="icon">📱</div>
+        <div class="type">App Store</div>
+        <div class="value">Download SunSeekers</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer>
+  <p>© 2026 SunSeekers · Built in California · <a href="mailto:press@sunseeker.app">press@sunseeker.app</a></p>
+  <p style="margin-top:6px">All trademarks and screenshots are the property of their respective owners.</p>
+</footer>
+
+</body>
+</html>
